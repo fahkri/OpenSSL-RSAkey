@@ -1,0 +1,25 @@
+<!-- validate by rxp -V -->
+<!ELEMENT rsaprivkey EMPTY>
+<!ELEMENT rsapubkey EMPTY>
+<!ELEMENT key  (rsapubkey,(rsaprivkey?))> 
+<!ATTLIST key
+	subject CDATA 	#REQUIRED
+        email   CDATA 	#REQUIRED
+>
+<!ATTLIST rsapubkey
+	n 	CDATA 	#REQUIRED
+	e 	CDATA 	#REQUIRED
+>
+<!ATTLIST rsaprivkey
+	n 	CDATA 	#REQUIRED
+	e 	CDATA	#REQUIRED
+        d       CDATA   #REQUIRED
+	p 	CDATA 	#REQUIRED
+	q 	CDATA 	#REQUIRED
+	dmp1 	CDATA	#REQUIRED
+	dmq1 	CDATA 	#REQUIRED
+	iqmp 	CDATA	#REQUIRED
+        
+>
+<!ELEMENT minirsa (key)+>
+

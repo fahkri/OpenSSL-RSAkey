@@ -1,0 +1,15 @@
+0.04  Tue Apr 24 01:27:04 CEST 2001
+	- storable support for keys.
+        - tests and fixes.
+
+0.03  Die Apr 17 21:37:53 CEST 2001
+        - many new features including blowfish, randombytes,
+          fingerprinting, encryption/decryption/signing.
+
+0.02  Mon Feb  5 13:02:52 CET 2001
+	- minor nits and picks.
+
+0.01  Wed Jan 31 11:08:54 CET 2001
+	- initial version by Stefan Traby.
+        - minor enhancements by Marc Lehmann.
+

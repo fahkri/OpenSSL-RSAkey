@@ -1,0 +1,10 @@
+#! /usr/bin/perl
+
+use OpenSSL::RSAkey;
+
+my $k = new OpenSSL::RSAkey 1024;
+
+print "<rsapubkey n=\"" . $k->n ."\" e=\"" .$k->e ."\" />\n";
+print "<rsaprivkey n=\"" . $k->n ."\" e=\"" .$k->e ."\" p=\"" .
+  $k->p ."\" q=\"" . $k->q . "\" dmp1=\"" . $k->dmp1 . "\" dmq1=\"" .
+  $k->dmq1 ."\" iqmp=\"" . $k->iqmp . "\" d=\"" .$k->d. "\"/>\n";
